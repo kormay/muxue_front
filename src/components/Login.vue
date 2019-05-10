@@ -40,7 +40,7 @@
       submitForm (formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            alert('submit!')
+            this.$router.push({name:"home"})
           } else {
             console.log('error submit!!')
             return false
