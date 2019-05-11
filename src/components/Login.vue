@@ -1,16 +1,17 @@
 <template>
   <div id="login_form">
-    <el-row :gutter="24">
-      <el-col :span="8" :offset="8">
-        <el-form :model="form" status-icon :rules="rules" ref="form" label-width="100px" class="demo-form">
-          <el-form-item label="用户名" prop="account">
-            <el-input type="text" v-model="form.account" autocomplete="off"></el-input>
+    <el-row :gutter="24" style="text-align: center">
+      <el-col :xs="4" :sm="6" :md="8" :lg="8" :xl="8">&nbsp;</el-col>
+      <el-col :xs="16" :sm="12" :md="8" :lg="8" :xl="8" id="login_div" style="padding-left: 50px; padding-right: 50px">
+        <el-form :model="form" status-icon :rules="rules" ref="form" label-width="0" class="demo-form">
+          <el-form-item label="" prop="account">
+            <el-input type="text" v-model="form.account" autocomplete="off" placeholder="请输入用户名"></el-input>
           </el-form-item>
-          <el-form-item label="密码" prop="pass">
-            <el-input type="password" v-model="form.pass" autocomplete="off"></el-input>
+          <el-form-item label="" prop="pass">
+            <el-input type="password" v-model="form.pass" autocomplete="off" placeholder="请输入密码"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="submitForm('form')">提交</el-button>
+            <el-button type="success" @click="submitForm('form')" round>Yes, I like you</el-button>
           </el-form-item>
         </el-form>
       </el-col>
@@ -18,9 +19,24 @@
   </div>
 </template>
 
+<style>
+  body {
+    background: url(../assets/backend.jpeg);
+    background-size: 100% auto;
+  }
+
+  #login_div {
+    padding-top: 50px;
+    background:rgba(0,0,0,0.7);
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+</style>
+
 <script>
   export default {
-    data () {
+    data() {
       return {
         form: {
           account: '',
@@ -37,10 +53,10 @@
       }
     },
     methods: {
-      submitForm (formName) {
+      submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            this.$router.push({name:"home"})
+            this.$router.push({name: "home"})
           } else {
             console.log('error submit!!')
             return false
