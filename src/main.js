@@ -7,15 +7,16 @@ import router from './router'
 import axios from 'axios'
 import App from './App'
 
-Vue.config.productionTip = false
-Vue.prototype.axios = axios
+Vue.use(ElementUI);
 
-Vue.use(ElementUI)
+Vue.config.productionTip = false;
+Vue.prototype.axios = axios;
 
-/* eslint-disable no-new */
+import './register/'
+
 new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
-})
+});
