@@ -32,6 +32,11 @@
     border-radius: 10px;
   }
 
+  #login_form {
+    margin-top: 100px;
+  }
+
+
 </style>
 
 <script>
