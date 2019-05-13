@@ -61,7 +61,7 @@
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            this.$router.push({name: "home"})
+            this.$router.push({name: "love_line"})
           } else {
             console.log('error submit!!')
             return false

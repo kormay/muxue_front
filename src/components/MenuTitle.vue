@@ -25,10 +25,6 @@
       <el-col :span="1"><img class="kiss-icon" src="../assets/kiss/kiss22.jpeg" alt=""></el-col>
       <el-col :span="1"><img class="kiss-icon" src="../assets/kiss/kiss23.jpeg" alt=""></el-col>
       <el-col :span="1"><img class="kiss-icon" src="../assets/kiss/kiss24.jpeg" alt=""></el-col>
-      <!--<el-col :span="2"><div :span="2" class="kiss-icon"><img src="../assets/kiss/kiss15.jpeg" alt=""></div></el-col>-->
-      <!--<el-col :span="2"><div :span="2" class="kiss-icon"><img src="../assets/kiss/kiss16.jpeg" alt=""></div></el-col>-->
-      <!--<el-col :span="2"><div :span="2" class="kiss-icon"><img src="../assets/kiss/kiss17.jpeg" alt=""></div></el-col>-->
-      <!--<el-col :span="2"><div :span="2" class="kiss-icon"><img src="../assets/kiss/kiss18.jpeg" alt=""></div></el-col>-->
     </el-row>
   </div>
 </template>
