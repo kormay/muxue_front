@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <el-timeline style="margin-left: 30%;width: 40%;">
-      <el-timeline-item v-for="(activity, index) in activities"
+      <el-timeline-item placement="top" v-for="(activity, index) in activities"
                         :key="index"
                         :icon="activity.icon"
                         :type="activity.type"
