@@ -1,5 +1,5 @@
 <template>
-  <div id="menu-title" align="center">
+  <div id="menu-title">
     <el-row class="kiss-title">
       <el-col :span="1"><img class="kiss-icon" src="../assets/kiss/kiss1.jpeg" alt=""></el-col>
       <el-col :span="1"><img class="kiss-icon" src="../assets/kiss/kiss2.jpeg" alt=""></el-col>
