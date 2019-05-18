@@ -1,3 +1,4 @@
 import MenuTitle from './MenuTitle'
+import NavMenu from './NavMenu'
 
-export {MenuTitle}
+export {MenuTitle, NavMenu}
