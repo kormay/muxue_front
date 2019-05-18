@@ -14,9 +14,13 @@
 </style>
 
 <script>
+  import NavMenu from "./NavMenu"
   export default {
     data () {
       return {}
+    },
+    components: {
+      NavMenu
     }
   }
 </script>
