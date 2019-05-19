@@ -48,13 +48,13 @@
       <el-row>
         <el-col :span="24" class="love-word">Xue, I have fallen in love with you for</el-col>
         <el-col :span="24">
-          <span class="last-time"> {{days}} </span>
+          <span class="last-time">{{days}}</span>
           <span class="last-unit">days</span>
-          <span class="last-time"> {{hours}} </span>
+          <span class="last-time">{{hours}}</span>
           <span class="last-unit">hours</span>
-          <span class="last-time"> {{minutes}} </span>
+          <span class="last-time">{{minutes}}</span>
           <span class="last-unit">minutes</span>
-          <span class="last-time"> {{seconds}} </span>
+          <span class="last-time">{{seconds}}</span>
           <span class="last-unit">seconds</span>
         </el-col>
       </el-row>
